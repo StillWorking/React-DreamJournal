@@ -69,7 +69,7 @@ function Dashboard(props) {
             </AppBar>
             <Sidebar
               signOut={signOut}
-              open={!open}
+              open={open}
               handleDrawerClose={handleDrawerClose}
             />
             <main

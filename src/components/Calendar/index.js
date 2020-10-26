@@ -67,7 +67,6 @@ function Calendar(props) {
         let data = snapshot.val();
         setDreams(data);
         setLoading(false);
-        // setEditing(false); Add later
       });
   };
   // eslint-disable-next-line 
@@ -85,7 +84,7 @@ function Calendar(props) {
   };
 
   return (
-    <Grid container spacing={3}>
+    <Grid container spacing={4}>
       <Grid item xs='auto' md='auto' lg='auto'>
         <CalendarHead
           allMonths={allMonths}
@@ -109,7 +108,7 @@ function Calendar(props) {
       </Grid>
       <Grid item xs={8} md={3} lg={2}>
         <Paper style={{
-          width:"400%"
+          width:"350%"
         }} className="paper">
           {editing ? (
             <>
